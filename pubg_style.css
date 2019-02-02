@@ -1,0 +1,24 @@
+body{
+    background: url("pubg-crates/wp2208669.png")
+}
+
+.mylabel{
+    background-color: #555;
+    border-radius: 5px 5px 5px 5px;
+    color:#fff;
+    padding: 10px;
+}
+
+#sponsor .row .row .col-sm-3 img {
+    width: 245px;
+    height: 200px;
+  }
+  #sponsor .row .row .col-sm-4 img {
+    width: 245px;
+    height: 160px;
+  }
+  #sponsor .title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  

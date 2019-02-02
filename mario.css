@@ -1,0 +1,182 @@
+.view6 {
+  background: #6B8CFF;
+  overflow: hidden;
+}
+
+.floor {
+  width: 200%;
+  height: 32px;
+  background: url('https://dl.dropbox.com/s/mk3e63xss3289n6/overworld_ground.png');
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  animation: floor .1s linear infinite;
+}
+
+.cloud {
+  width: 64px;
+  height: 48px;
+  background: url('https://dl.dropbox.com/s/gnp4m710hnu93sr/cloud.png');
+  position: absolute;
+  animation: cloud 15s linear infinite;
+  right: -92px;
+}
+
+.c1 {
+  top: 20%;
+}
+
+.c2 {
+  top: 40%;
+  animation-delay: 3s;
+}
+
+.c3 {
+  top: 60%;
+  animation-delay: 6s;
+}
+
+.c4 {
+  top: 50%;
+  animation-delay: 7.5s;
+}
+
+.c5 {
+  top: 35%;
+  animation-delay: 11.2s;
+}
+
+.c6 {
+  top: 50%;
+  animation-delay: 14.2s;
+}
+
+.c7 {
+  top: 65%;
+  animation-delay: 16s;
+}
+
+.c8 {
+  top: 26%;
+  animation-delay: 17s;
+}
+
+.mario {
+  width: 60px;
+  height: 64px;
+  background: url('https://dl.dropbox.com/s/37f73uhx0xmga67/mario_walk.png');
+  position: absolute;
+  bottom: 32px;
+  left: 10px;
+}
+
+.mario_jump {
+  animation: jump .8s ease-out;
+  background: url('https://dl.dropbox.com/s/hyfyl56w1ta3puy/jump.png');
+}
+
+@keyframes floor {
+  100% {left: -32px;}
+}
+
+@keyframes cloud {
+  100% {transform: translate(-1500px, 0)}
+}
+
+@keyframes jump {
+  0% {transform: translate(0, 0)}
+  50% {transform: translate(0, -80px)}
+  100% {transform: translate(0, 0)}
+}
+
+.event-btns {
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.event-btn {
+  padding: 3%;
+  margin: 5%;
+  color: white;
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+  background : url('./images/shivamtopper.png');
+  background-size: contain;
+}
+
+.active {
+  color: white;
+  background-color: blue;
+}
+
+.events-grid{
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+  width:80%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .event-btns {
+    flex-direction: column;
+  }
+}
+
+.event{
+  background: white;
+  padding:10%;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  background: white;
+  height: 100%;
+  width: 100%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,24 @@
+
+.text{
+    color:#ffffff;
+    width: 45%;
+    
+}
+.main{
+    width:45%;
+}
+span{
+    position: absolute;
+    display: block;
+    font-family: space;
+    font-weight: 100;
+    font-size: 40px;
+    animation: floatText 5s infinite alternate ease-in-out;
+}
+
+@font-face {
+font-family: 'space';
+src: url(font/ca.ttf);
+font-style: normal;
+font-weight : 100;
+}

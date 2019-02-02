@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <link rel="stylesheet" href = "about.css">
+        <script type="text/javascript">
+			//init object globally
+			var objImage= null;
+			function init(){
+				objImage=document.getElementById("image1");				
+				objImage.style.position='relative';
+				objImage.style.left='0px';
+				objImage.style.top='500px';
+			}
+			function getKeyAndMove(e){				
+				var key_code=e.which||e.keyCode;
+				switch(key_code){
+					case 37: //left arrow key
+						moveLeft();
+						break;
+					
+					case 39: //right arrow key
+						moveRight();
+						break;
+									
+				}
+			}
+			function moveLeft(){
+				objImage.style.left=parseInt(objImage.style.left)-5 +'px';
+			}
+			
+			function moveRight(){
+				objImage.style.left=parseInt(objImage.style.left)+5 +'px';
+			}
+			
+			window.onload=init;
+		</script>
+    </head>
+    <body onkeydown='getKeyAndMove(event)'>
+        <div class = "main">
+<span class = "text">Maharaja Agrasen Institute of Technology, Affiliated to Guru Gobind Singh Indraprastha University is a premier institute in the field of technology. The Institute is established by Maharaja Agrasen Technical Education Society promoted by groups of well known Industrialists, Businessmen, Professionals and Philanthropists with an aim to promote quality education in the field of Technology.<br>The knowledge, skill and acumen instilled in the students has been instrumenal in creating prospective leaders for tomorrow and making them stand above the hoi polloi.Techsurge & Mridang 2018 is a three days Techno-Cultural fest Which include Technical events under the banner of "Techsurge", Cultural events under the banner of "Mridang and various Non-Tech and Sports events."</span>
+
+</div> 
+<script>
+    var el = document.querySelector(".text");
+    var width=window.innerWidth *0.5;
+    el.style.width=width + "px";
+      var left = 1;
+      var height = 0;
+      var hitLeft = true;
+      var hitRight = false;
+      var maxHeight = window.innerHeight;
+      var maxLeft = window.innerWidth - width;
+      setInterval(() => {
+        move();
+      }, 10);
+      function move() {
+        if (left > 0 && left <= maxLeft && hitLeft && !hitRight) {
+          if (left === maxLeft) {
+            hitRight = true;
+            hitLeft = false;
+          }
+          if (left === 1 || left === maxLeft) {
+            height = height + 20;
+          }
+          if (height === maxHeight) {
+            height = 0;
+            left = 1;
+            hitLeft = true;
+            hitRight = false;
+          }
+          left++;
+        } else if (hitRight) {
+          if (left == 0) {
+            hitLeft = true;
+            hitRight = false;
+            left++;
+          } else {
+            left--;
+          }
+        }
+        el.style.left = left + "px";
+        el.style.top = height + "px";
+      }
+    </script>
+  		<img id="image1" src="http://files.softicons.com/download/game-icons/classic-games-icons-by-thvg/ico/Space%20Invaders%201.ico" alt="includehelp.com" height = 5% width = 5%/> 
+</body>
+</html>

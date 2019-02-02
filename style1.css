@@ -1,0 +1,80 @@
+.view9 {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+.bg-image {
+  /* The image used */
+  background-image: url("pubg-crates/pubg.gif");
+  
+  /* Add the blur effect */
+  filter: blur(2.5px);
+  -webkit-filter: blur(2.5px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 74%;
+  left: 50%;
+  bottom:-30%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+}
+.bg-text h1{
+
+  font-family: "HeadlinerNo45";
+  font-size: 4em;
+  text-align: center;
+  color:#DE8D00
+}
+@font-face{
+font-family: 'HeadlinerNo45';
+src: url(font/HeadlinerNo45.ttf);
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.bg-text h3{
+  font-family: "";
+  font-size: 1.2em;
+  }
+.bg-text p{
+  font-size: 0.9em;
+}

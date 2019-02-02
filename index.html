@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="author" content="Copyright (c) 2016 Marcin Gierczak (www.viewdesic.com)">
+    <meta name="description" content="viewScroller plugin by Marcin Gierczak. This plugin allows creating fullscreen scrollable webpage." />
+    <meta name="keywords" content="viewScroller, fullscreen, html fullpage, scroll page, page scrolling, page scroll, full scroll" />
+    <title>Techsurge and Mridang'19</title>
+    <link rel="stylesheet" href = "gallery.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="jquery.easing.min.js"></script>
+    <script src="jquery.mousewheel.min.js"></script>
+    <script src="viewScroller.js"></script>
+    <link rel="stylesheet" type="text/css" href="viewScroller.css">
+    <link rel="stylesheet" type="text/css" href="examples.css">
+    <link rel = "stylesheet" href="bootstrap.css">
+    <link rel = "stylesheet" href = "about.css">
+    <link rel = "stylesheet" href="style.css">
+    <link rel = "stylesheet" href="mario.css">
+    
+
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    
+
+
+    <script src = "bootstrap.min.js"></script>
+    <script src = "mario.js"></script>
+    <link rel = "stylesheet" href = "agenda.css">
+    <script src = "agenda.js"></script>
+    <style>
+        /* Styles specific for this example */ 
+        
+        .menu {
+            left: 20px;
+        }
+        
+        .menu-text {
+            right: 20px;
+        }
+        
+        .arrows {
+            left: 10px;
+        }
+    </style>
+</head>
+
+<body style = "background-color: #111;">
+  
+    <!-- <div class="menu">
+        <div class="buttons-section-fxd">
+            <button id="hidePanel" class="btn-own btn-own-hidepanel raised center">&lt;&lt;</button>
+        </div>
+        <div class="buttons-section">
+            <a href="#view-1" class="vs-anchor"><button class="btn-own btn-own-changeview raised center">Home</button></a>
+        </div>
+        <div class="buttons-section">
+            <a href="#view-2" class="vs-anchor"><button class="btn-own btn-own-changeview raised center">About Us</button></a>
+        </div>
+        <div class="buttons-section">
+            <a href="#view-3" class="vs-anchor"><button class="btn-own btn-own-changeview raised center">Events</button></a>
+        </div>
+        <div class="buttons-section">
+            <a href="#view-4" class="vs-anchor"><button class="btn-own btn-own-changeview raised center">Gallery</button></a>
+        </div>
+        <div class="buttons-section">
+            <a href="#view-5" class="vs-anchor"><button class="btn-own btn-own-changeview raised center">Sponsors</button></a>
+        </div>
+        <div class="buttons-section">
+            <a href="#view-6" class="vs-anchor"><button class="btn-own btn-own-changeview raised center">Contact Us</button></a>
+        </div>
+        <div class="buttons-section">
+            <button class="btn-own btn-own-changeview raised center vs-mainview-prev">prev</button>
+        </div>
+        <div class="buttons-section">
+            <button class="btn-own btn-own-changeview raised center vs-mainview-next">next</button>
+        </div>
+        <div class="scroll-checkbox">
+            <input id="scroll" type="checkbox" checked>
+            <label for="scroll">Scroll views when they are changing</label>
+        </div>
+    </div> -->
+
+
+
+    <!-- <img src="images/arrows.png" alt="You can use arrows to change a view" class="arrows"> -->
+
+    <!-- <div class="panel"></div> -->
+
+
+<!--  -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Coming Soon!</p>
+      </div>
+
+    </div>
+    <div class="mainbag" style = "background-color: #000;">
+        <div vs-anchor="view-1" class="mainview view1" style = "background-color: black">
+        <img src = "images/11.gif" style = "width: 100%;height: 100%;z-index: 10;position: absolute; ">
+                <!-- <h1 class = "date">
+                        <span>1</span>
+                        <span>4</span>
+                        <span>-</span>
+                        <span>1</span>
+                        <span>6</span>
+                        <span>,</span>
+                        <span>M</span>
+                        <span>a</span>
+                        <span>r</span>
+                        <span>c</span>
+                        <span>h</span>
+                      </h1> -->
+                    <!-- </br> -->
+            <!-- <div class="vs-center-wrap"> -->
+                
+
+                   <!-- <div class = "pacmans"> -->
+                        <!-- <img src="https://i.imgur.com/TY5BYLR.gif" style = "position: absolute; right: 10px; bottom: 10%;"/> -->
+                           
+                     <!--  <h2 style="color : white">Theme: Gamification!</h2> -->
+                          
+                             <h4 id = "tnm" style="z-index: 10000;">Maharaja Agrasen Institute of Technology</h4>
+                            
+                             <h4 id = "tnm1" style="z-index: 10000;">presents.....</h4>
+
+                              <img src="images/12.png" style = "width:100%;max-width:500px; height:40%;position: relative;z-index: 999;display: block;margin: auto;"/>
+                             
+                             <br> <br> 
+
+                             <span id = "dates" style="z-index: 100000">14 - 16 March</span> 
+                             
+                             
+                             
+                              <!-- <img src=""/> -->
+                                <!-- https://i.imgur.com/ObvuHVs.gif -->
+                                <!-- https://i.imgur.com/obymYX9.gif -->
+                        <!-- </div> -->
+                        <!-- </div> -->
+                       <!--    <h2 style="color : white">Theme: Gamification!</h2> -->
+                          
+                                <!-- <h2 id = "theme">Theme: Gamification!</h2> -->
+                              <!--   <div class="pacman-holder moving" style = "right: 0;">
+                                        <div class="pacman-container">
+                                            <div class="pacman-body"></div>
+                                            <div class="pacman-mouth"><div class="pacman"></div></div>
+                                        </div>
+                                        
+                                        <div class="dot"></div>
+                                        
+                                     </div> -->
+                                    <div class="pacman"style="z-index: 100000">
+                                        <div class="top"></div>
+                                        <div class="bottom"></div>
+                                        <div class="dots"></div>
+                                      </div>
+                                <!--   <span id = "dates" style="z-index: 100000">14 - 16 March</span>   -->   
+
+                                      <div class="ghosts"style="z-index: 100000" >
+                                        <div class="ghost">
+                                          <div class="eyes">
+                                            <span class="l-eye"></span>
+                                            <span class="r-eye"></span>
+                                          </div>
+                                          <div class="l"></div>
+                                          <div class="r"></div>
+                                        </div>
+                                        <div class="ghost">
+                                          <div class="eyes">
+                                            <span class="l-eye"></span>
+                                            <span class="r-eye"></span>
+                                          </div>
+                                          <div class="l"></div>
+                                          <div class="r"></div>
+                                        </div>
+                                        <div class="ghost">
+                                          <div class="eyes">
+                                            <span class="l-eye"></span>
+                                            <span class="r-eye"></span>
+                                          </div>
+                                          <div class="l"></div>
+                                          <div class="r"></div>
+                                        </div>
+                                        <div class="ghost">
+                                          <div class="eyes">
+                                            <span class="l-eye"></span>
+                                            <span class="r-eye"></span>
+                                          </div>
+                                          <div class="l"></div>
+                                          <div class="r"></div>
+                                        </div>  
+                                      </div> 
+                                <!-- <div class = "theme">
+<span id = "theme1">T</span>
+<span id = "theme2">H</span>
+<span id = "theme3">E</span>
+<span id = "theme4">M</span>
+<span id = "theme5">E</span>
+<span id = "theme6">:</span>
+<span id = "theme7">G</span>
+<span id = "theme8">A</span>
+<span id = "theme9">M</span>
+<span id = "theme10">I</span>
+<span id = "theme11">F</span>
+<span id = "theme12">I</span>
+<span id = "theme13">C</span>
+<span id = "theme14">A</span>
+<span id = "theme15">T</span>
+<span id = "theme16">I</span>
+<span id = "theme17">O</span>
+<span id = "theme18">N</span>
+</div> -->
+
+                <!-- <div class="vs-center"> -->
+                    
+              
+                    <!-- <h2 id = "theme">Theme: Gamification!</h2> -->
+                   
+                    
+                   
+                    <!-- <img src="images/viewscroller-logo.png" alt="viewScroller logo" class="logo"> -->
+                 <!-- </div> -->
+                 
+            </div>
+        <!-- </div> -->
+      
+
+
+
+
+
+<!--  -->
+
+
+<!-- <div vs-anchor="view-2" class="mainview view2" style = "background: #000;">
+    <!-- <div id="myspecialdiv">
+        <iframe class="shivam" scrolling="no" frameborder="0" src="about.html"></iframe>
+    </div> -->
+    <!-- <p style = "text-align: justify;font-size: 2em; color: #fff; ">Agenda - Day 1</p>
+    <div class="timeline">
+        <div class="timelinecontainer left">
+          <div class="timelinecontent">
+            <h2>10:00 am</h2>
+            <p>1. Mr. and Miss Mridang</p>
+            <p>2. MAIT's Got Talent</p>
+          </div>
+        </div>
+        <div class="timelinecontainer right">
+          <div class="timelinecontent">
+            <h2>12:00 pm</h2>
+            <p>1. Tennis Match</p>
+          </div>
+        </div>
+      </div>
+</div>
+
+<div vs-anchor="view-3" class="mainview view3">
+    <  <p style = "font-size: 2em; color: #fff; ">Agenda - Day 2</p>
+    <div class="timeline">
+        <div class="timelinecontainer left">
+          <div class="timelinecontent">
+            <h2>10:00 am</h2>
+            <p>1. Mr. and Miss Mridang</p>
+            <p>2. MAIT's Got Talent</p>
+          </div>
+        </div>
+        <div class="timelinecontainer right">
+          <div class="timelinecontent">
+            <h2>12:00 pm</h2>
+            <p>1. Tennis Match</p>
+          </div>
+        </div>
+      </div>
+</div> -->
+
+<!-- <div vs-anchor="view-4" class="mainview view4">
+    <p style = "font-size: 2em; color: #fff; text-align: justify;">Agenda - Day 3</p>
+    <div class="timeline">
+        <div class="timelinecontainer left">
+          <div class="timelinecontent">
+            <h2>10:00 am</h2>
+            <p>1. Mr. and Miss Mridang</p>
+            <p>2. MAIT's Got Talent</p>
+          </div>
+        </div>
+        <div class="timelinecontainer right">
+          <div class="timelinecontent">
+            <h2>12:00 pm</h2>
+            <p>1. Tennis Match</p>
+          </div>
+        </div>
+      </div>
+</div> --> 
+
+
+
+
+        <div vs-anchor="view-5" class="mainview view5">
+         <!--    <div id="myspecialdiv">
+               <iframe class="shivam" scrolling="no" frameborder="0" src="about.html"></iframe>
+            
+            </div>  -->
+          
+            <div class = "viewdiv" style="height:100%;">
+                    <img src = "images/11.gif" style = "width: 100%;height: 100%;z-index: 10;position: absolute; ">
+ 
+                    <h2 class="abouthead" style="z-index: 110000;position:relative;margin:0;">About Us</h2>
+               
+                    <span style="font-size: 1.6rem; z-index: 100000;position: relative; color: white" class = "text">Maharaja Agrasen Institute of Technology, Affiliated to Guru Gobind Singh Indraprastha University is a premier institute in the field of technology. The Institute is established by Maharaja Agrasen Technical Education Society promoted by groups of well known Industrialists, Businessmen, Professionals and Philanthropists with an aim to promote quality education in the field of Technology.<br>The knowledge, skill and acumen instilled in the students has been instrumenal in creating prospective leaders for tomorrow and making them stand above the hoi polloi.Techsurge & Mridang 2018 is a three days Techno-Cultural fest Which include Technical events under the banner of "Techsurge", Cultural events under the banner of "Mridang and various Non-Tech and Sports events."</span>
+                    
+                  
+                    <script>
+                        var el = document.querySelector(".text");
+                        var e2=  document.querySelector(".view5").offsetHeight;
+                        var e3 = el.offsetHeight;
+                        var width=window.innerWidth *0.5;
+                        el.style.width=width + "px";
+                          var left = 1;
+                          var height =0;
+                          var hitLeft = true;
+                          var hitRight = false;
+                          var maxHeight = 0.5*e2 - e3 ;
+                          var maxLeft = window.innerWidth - width;
+                          if(window.innerWidth >= 900) {
+
+                              setInterval(() => {
+                                move();
+                              }, 2);
+                              function move() {
+                                if (left > 0 && left <= maxLeft && hitLeft && !hitRight) {
+                                  if (left === maxLeft) {
+                                    hitRight = true;
+                                    hitLeft = false;
+                                  }
+                                  if (left === 1 || left === maxLeft) {
+                                    height = height + 20;
+                                  }
+                                  if (height >= maxHeight) {
+                                    height = 0;
+                                    left = 1;
+                                    hitLeft = true;
+                                    hitRight = false;
+                                  }
+                                  left++;
+                                } else if (hitRight) {
+                                  if (left == 0) {
+                                    hitLeft = true;
+                                    hitRight = false;
+                                    left++;
+                                  } else {
+                                    left--;
+                                  }
+                                }
+                                el.style.left = left + "px";
+                                el.style.top = height + "px";
+                              }
+                          } else {
+                            el.style.width = "100%";
+                            el.style.height = "68%";
+                          }
+                        </script> 
+            
+            <br><br><br>
+            <div>
+  
+                  <marquee behavior="alternate"style=" z-index: 220000;position: relative;" direction="left">
+                          <img src="./images/space.png"  style=" z-index: 220000;position: relative;  width : 120px; height : 80 px;"/>
+                        </marquee>
+  
+            </div>
+
+
+        </div> 
+
+        </div>
+      
+        <div vs-anchor="view-6" class="mainview view6">
+            <div class="cloud c1"></div>
+            <div class="cloud c2"></div>
+            <div class="cloud c3"></div>
+            <div class="cloud c4"></div>
+            <div class="cloud c5"></div>
+            <div class="cloud c6"></div>
+            <div class="cloud c7"></div>
+            <div class="cloud c8"></div>
+            <div class="mario"></div>
+            <div class="floor"></div>
+            <div class="event-btns">
+                
+                <div class="event-btn tech">Technical</div>
+                <div class="event-btn non-tech">Non-Technical</div>
+                <div class="event-btn cult">Cultural</div>
+            </div>
+            <div class="events-grid">
+                <div class="event" id="myBtn">
+                    Coming Soon!
+                </div>
+            </div>
+        </div>
+       
+
+
+       <!--  -->
+       
+       
+
+
+        <div vs-anchor="view-7" class="mainview view7">
+                <section id="sponsor">
+                        <img src = "images/11.gif" style = "width: 100%;height: 100%;z-index: 10;position: absolute; ">
+
+                        <div class="timetable-wrapper location-present" style="z-index: 10000">
+                        <div class="container">
+
+                            <div class="row">
+                                <div class="col-md-10 col-md-offset-1 left" style="text-align: center;">
+                                    <div class="inner">
+                                            <span class="note" style="text-align: center; color:#fff;z-index: 100000;position: relative;">
+                                                <i class="nbr"></i>
+                                                who is supporting us?
+                                            </span><br>
+                                        <h2 class="title" style="text-align: center;color:#fff;font-size: 2em;z-index: 1000000;position: relative;">Our Sponsors</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="text-align: center;" id="sponser__row">
+                              <div class="row" style="text-align: center;">
+                                <div class="col-sm-3">
+                                    <img src="images/sponsor/cb.jpg" alt="Coding Blocks" style="z-index: 100000;position: relative;">
+                                </div>                                                                          
+                                <div class="col-sm-3">
+                                    <img src="images/sponsor/cobb.jpg" alt="Cobb Italy" style="z-index: 100000;position: relative;"/>
+                                </div>
+                                <div class="col-sm-3">
+                                       
+                                        <img src="images/sponsor/ss.jpg" style="z-index: 100000;position: relative;" alt="Shake Shook" />
+                                </div>
+                                <div class="col-sm-3">
+                                    <img  
+                                        src="images/sponsor/gateforum.jpg"style="z-index: 100000;position: relative;" alt="Gate Forum" 
+                                       />      
+                            </div>
+                                
+                                
+                              </div>
+                              <br><br>
+                            <div class="row" >
+                              <div class="col-sm-3" >
+                                    <img src="images/sponsor/cc.jpeg" alt="Californian Classics" style="z-index: 100000;position: relative;"/>
+                              </div>
+                                      
+                              <div class="col-sm-3">
+                                    <img
+                                        src="images/sponsor/rio2.jpg" style="z-index: 100000;position: relative;"alt="Rio"
+                                        />  
+                            </div>
+                            <div class="col-sm-3" >
+                                     <img  src="images/sponsor/g3s.jpg"style="z-index: 100000;position: relative;" alt="G3S Cinemas"/>
+                            </div>
+                            <div class="col-sm-3">
+                                       
+                                       <img src="images/sponsor/justchill.jpg" style="z-index: 100000;position: relative;"alt="Just Chill"/>
+                                </div>
+                            </div>
+                           <!-- <div class="row" style="text-align: center;">
+                              <div class="col-sm-3"></div>
+                              <div class="col-sm-3" style="" >
+                                    <a href="http://www.bull18.com/" style=" " target="_blank"><img src=" sponsors/bull18.png" alt="bull18.com"/></a>
+                              </div>
+                              
+                              <div class="col-sm-3" style="padding-top: 50px;">
+                                    <a href="http://www.stickermule.com" target="_blank"><img src=" sponsors/stickermule_new.png"
+                                        alt="stickermule"/></a>
+                              </div>          
+                              
+                            
+                            </div> -->
+                              <br><br>
+                            <div class="row" >
+                              <div class="col-sm-3" >
+                                    <img src="images/sponsor/an.jpeg" style="z-index: 100000;position: relative;"alt="Ash & Niell" />
+                              </div>
+                                      
+                              <div class="col-sm-3">
+                                    <img
+                                        src="images/sponsor/chocoart.jpg"style="z-index: 100000;position: relative;" alt="Chocoart"
+                                        />  
+                            </div>
+                            <div class="col-sm-3" >
+                                     <img  src="images/sponsor/mojoland.jpg"style="z-index: 100000;position: relative;" alt="Mojo Land"/>
+                            </div>
+                             <div class="col-sm-3">  
+                                    <img src="images/sponsor/cp.jpeg"style="z-index: 100000;position: relative;" alt="Central Perk"/>
+                                </div>
+                            </div>
+                
+                
+                              <br><br>
+                           
+                         
+                        </div>
+                    </div>    
+                
+                    </section>
+        </div>
+
+
+    
+        <div vs-anchor="view-8" class="mainview view8">
+             <!-- <div id="myspecialdiv2">
+                <iframe class="shivam1" scrolling="yes" frameborder="0" src="gallery.html"></iframe>
+            </div>  -->
+
+
+            <div class="container gallery-container" style = "background-color: #27cece;width: 100%;height:100%;position: relative;" >
+                <img src="./images/angrybirds/ab.png" alt="Bird" class="angrybird__img1">
+                <img src="./images/angrybirds/584c69426e7d5809d2fa6361.png" alt="Bird" class="angrybird__img2">
+             <!-- <h1 id = "ab_heading">Techsurge & Mridang</h1>  -->
+            
+                <h2 id = "ab_heading" style="height:7%;">GALLERY</h2>
+                <!-- <img id  = "ab" src = "images/ab.png">  -->
+                <div class="tz-gallery" style = "background-color: #27cece;height:85%;">
+            
+                    <div class="row" id ="gallery__row">
+            
+                        <div class="gallery__item">
+                            <a class="lightbox" href="./images/tnmpics/1.jpg">
+                                <img src="./images/tnmpics/1.jpg" alt="Bridge">
+                            </a>
+                        </div>
+                        <div class="gallery__item">
+                            <a class="lightbox" href="./images/tnmpics/2.jpg">
+                                <img src="./images/tnmpics/2.jpg" alt="Bridge">
+                            </a>
+                        </div>
+                        <div class="gallery__item">
+                            <a class="lightbox" href="./images/tnmpics/3.jpg">
+                                <img src="./images/tnmpics/3.jpg" alt="Bridge">
+                            </a>
+                        </div>
+                        <div class="gallery__item">
+                            <a class="lightbox" href="./images/tnmpics/4.jpg">
+                                <img src="./images/tnmpics/4.jpg" alt="Bridge">
+                            </a>
+                        </div>
+                        <div class="gallery__item">
+                            <a class="lightbox" href="./images/tnmpics/5.jpg">
+                                <img src="./images/tnmpics/5.jpg" alt="Bridge">
+                            </a>
+                        </div> 
+                        <div class="gallery__item">
+                            <a class="lightbox" href="./images/tnmpics/6.jpg">
+                                <img src="./images/tnmpics/6.jpg" alt="Bridge">
+                            </a>
+                        </div>
+            
+                    </div>
+            
+                </div>
+           
+            </div>
+             
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+            <script>
+                baguetteBox.run('.tz-gallery');
+            </script>
+        <div id="stuff">
+                <div id="bird">
+                    <div class="hair" name="left"> </div>
+                  <div class="hair" name="right"> </div>         
+                  <ul id="angry">
+                      <li></li>
+                    <li></li> 
+                    <li> . . </li>     
+                    <li></li>       
+                    <li></li>       
+                    <li></li>       
+                    <li></li>      
+                    <li></li>   
+                    <li id="tail"></li>             
+                  </ul>
+                  </div>
+                <ul id="cloud">
+                    <li></li>
+                  <li></li>
+                  <li></li>
+                  </ul>
+              </div>
+
+
+
+
+
+
+        </div>
+
+
+
+<div vs-anchor="view-9" class="mainview view9">
+    <!-- <div class="box"> -->
+        <!-- <div class="info">Contact</div> -->
+ 
+<!--Section: Contact v.2-->
+
+
+
+<div class="bg-image"></div>
+
+<div class="bg-text">
+<h1>CONTACT US</h1>
+
+
+<div class="row">
+<div class="column">
+<i class="fas fa-map-marker-alt"></i>
+<h3><strong>MAHARAJA AGRASEN INSTITUTE OF TECHNOLOGY</strong></h3>
+<p>PSP Area, Plot No. 1, Sector-22, Rohini<br>Delhi-110086 </p>
+
+
+</div>
+<div class="column">
+<i class="fas fa-phone"></i>
+<h3><strong>PHONE</strong></h3>
+<p>+91-11-65647742</p>
+</div>
+<div class="column">
+<i class="fas fa-envelope"></i>
+<h3><strong>EMAIL ADDRESS</strong></h3>
+<p>tnm2k19@gmail.com</p>
+</div>
+</div>
+
+
+
+
+
+</div>
+</div>
+
+
+
+<!--Section: Contact v.2-->
+
+
+
+<!-- </div> -->
+</div>
+
+
+
+
+
+
+
+<!--  -->
+
+
+<!-- <div vs-anchor="view-10" class="mainview view10">
+
+</div>  -->
+
+
+
+
+
+</div>
+
+
+
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="jquery.easing.min.js"></script>
+    <script src="jquery.mousewheel.min.js"></script>
+    <script src="viewScroller.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Sets viewScroller with sample events
+            $('.mainbag').viewScroller({
+                useScrollbar: false,
+                beforeChange: function() {
+                    console.log('beforeChange fired!');
+                    return false; // It means that views change will be terminated
+                },
+                afterChange: function() {
+                    console.log('afterChange fired!');
+                },
+                beforeResize: function() {
+                    console.log('beforeResize fired!');
+                },
+                afterResize: function() {
+                    console.log('afterResize fired!');
+                }
+            });
+            // Sets start params for MENU
+            // $('.mainbag').css({
+            //     'left': '140px'
+            // });
+            // $.fn.viewScroller.setSpaceMainBag(140); // Sets 140px space for MENU
+            // // Show / hide menu panel
+            // $('#hidePanel').on('click', function() {
+            //     if ($('.panel').css('display') !== 'none') {
+            //         $('#hidePanel').text('>>');
+            //         $('.panel').hide();
+            //         $('.mainbag').css({
+            //             'left': '0px'
+            //         });
+            //         $.fn.viewScroller.setSpaceMainBag(0); // sets mainbag's width when panel is closed
+            //     } else {
+            //         $('#hidePanel').text('<<');
+            //         $('.panel').show();
+            //         $('.mainbag').css({
+            //             'left': '140px'
+            //         });
+                    // $.fn.viewScroller.setSpaceMainBag(140); // sets mainbag's width when panel is open
+                // }
+            // });
+            //Show / hide examples panel
+            $('.examples').hide();
+            $('.examples-show').click(function() {
+                $('.examples').toggle();
+            });
+            // Turnon / turnoff the scroll views when they are animate
+            $('#scroll').on('click', function() {
+                if ($('#scroll').prop("checked")) {
+                    $.fn.viewScroller.setChangeWhenAnim(true);
+                } else {
+                    $.fn.viewScroller.setChangeWhenAnim(false);
+                }
+            });
+
+            $('.event-btn').on('click', function(){
+                $.each($('.event-btn'), function(index, value){
+                    $(value).removeClass('active');
+                })
+                $(this).toggleClass('active');
+                $('.events-grid').css('display', 'grid');
+            });
+
+            // Get the modal
+            var modal = document.getElementById('myModal');
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on the button, open the modal 
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+			
+        });
+    </script>
+</body>
+
+</html>
