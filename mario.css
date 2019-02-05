@@ -180,3 +180,17 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+.list-container{
+
+  padding: 0 25%;
+
+}
+
+
+
+.techlist, .non-techlist, .cultlist {
+
+  display: none;
+
+}

@@ -10,6 +10,7 @@
     <meta name="keywords" content="viewScroller, fullscreen, html fullpage, scroll page, page scrolling, page scroll, full scroll" />
     <title>Techsurge and Mridang'19</title>
     <link rel="stylesheet" href = "gallery.css">
+     <link href="jquery-ui.css" rel="stylesheet" type="text/css">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -100,16 +101,16 @@
     <!-- <div class="panel"></div> -->
 
 
-<!--  -->
-    <div id="myModal" class="modal">
+<!--  
+ <div id="myModal" class="modal">
 
-      <!-- Modal content -->
+       Modal content 
       <div class="modal-content">
         <span class="close">&times;</span>
         <p>Coming Soon!</p>
       </div>
 
-    </div>
+    </div> -->
     <div class="mainbag" style = "background-color: #000;">
         <div vs-anchor="view-1" class="mainview view1" style = "background-color: black">
         <img src = "images/11.gif" style = "width: 100%;height: 100%;z-index: 10;position: absolute; ">
@@ -248,7 +249,7 @@
 
 
 <!-- <div vs-anchor="view-2" class="mainview view2" style = "background: #000;">
-    <!-- <div id="myspecialdiv">
+     <div id="myspecialdiv">
         <iframe class="shivam" scrolling="no" frameborder="0" src="about.html"></iframe>
     </div> -->
     <!-- <p style = "text-align: justify;font-size: 2em; color: #fff; ">Agenda - Day 1</p>
@@ -406,15 +407,144 @@
                 <div class="event-btn non-tech">Non-Technical</div>
                 <div class="event-btn cult">Cultural</div>
             </div>
-            <div class="events-grid">
-                <div class="event" id="myBtn">
-                    Coming Soon!
+           
+            <div class="list-container">
+
+
+
+                <div id="accordion1" class="techlist">
+  
+  
+  
+                <h3><a href="#">Technical Category A</a></h3>
+
+                <div>
+    
+                    <ul>
+                        <li>LanGaming</li>
+                        <li>CodeBlaze</li>
+                        <li>CodingJunction</li>
+                        <li>LineFollower</li>
+                        <li>InfinteLoop</li>
+                        <li>AquaBot</li>
+                      
+
+                      </ul>
+  
+                </div>          
+  
+                <h3><a href="#">Technical Category B</a></h3>            
+  
+                <div>
+  
+                    <ul>
+                        <li>HackMAIT</li>
+                        <li>Pin N Play</li>
+                        <li>RoboWars</li>
+                        <li>RoboRace</li>
+                        <li>RoboSoccer</li>
+                        <li>RoboMaze</li>
+                      
+
+                      </ul>
+  
                 </div>
+  
+                </div>
+  
+  
+  
+                <div id="accordion2" class="non-techlist">
+  
+                <h3><a href="#">Non Technical Category A</a></h3>
+  
+                <div>
+  
+                    <ul>
+                        <li>MTVcorner</li>
+                        <li>VigyaFun</li>
+                        <li>SpoofMafia</li>
+                        <li>FifaMockttransfer</li>
+                        <li>CricketFantasyLeague</li>
+                        <li>BetheSherlock</li>
+                      
+
+                      </ul>
+                </div>          
+  
+                <h3><a href="#">Non Technical Category B</a></h3>            
+  
+                <div>
+                    <li>RangBarse</li>
+                    <li>PhotoBooth</li>
+                    <li>Scavenger Hunt</li>
+                    <li>SaReGaMa</li>
+                    <li>AdOReel</li>
+                
+                    
+  
+                </div>
+  
+               
+                </div>
+  
+                <div id="accordion3" class="cultlist">
+  
+                <h3><a href="#">Cultural Category A</a></h3>
+  
+                <div>
+  
+                    <ul>
+                        <li>Footloose</li>
+                        <li>HauteCouture</li>
+                        <li>Armageddon</li>
+                        <li>MAITgotTalent</li>
+                        <li>Impulse</li>
+                        <li>DekhTamashaDekh</li>
+                        <li>Footloose</li>
+                        <li>Panache</li>
+
+                      </ul>
+  
+                </div>          
+
+                <h3><a href="#">Cultural Category B</a></h3>            
+  
+                <div>
+  
+                    <ul>
+                        <li>Individual Obstaclerace</li>
+                        <li>wall climbing</li>
+                        <li>dramebaaz</li>
+                        <li>keep calm and rap on</li>
+                        <li>Rangmanch</li>
+                        <li>Turn the Bass Line up</li>
+
+                      </ul>
+  
+                </div>
+  
+                <h3><a href="#">Sports</a></h3>
+  
+                <div>
+  
+                    <ul>
+                        <li>Cricket</li>
+                        <li>Football</li>
+                        <li>Volleyball</li>
+                        <li>Basketball</li>
+                        <li>Badminton</li>
+                        <li>Tugofwar</li>
+                        <li>Dodgeball</li>
+                    
+
+                      </ul>
+  
+                </div>
+  
             </div>
         </div>
-       
-
-
+      </div>
        <!--  -->
        
        
@@ -553,22 +683,58 @@
                                 <img src="./images/tnmpics/3.jpg" alt="Bridge">
                             </a>
                         </div>
-                        <div class="gallery__item">
-                            <a class="lightbox" href="./images/tnmpics/4.jpg">
-                                <img src="./images/tnmpics/4.jpg" alt="Bridge">
-                            </a>
-                        </div>
+                       
                         <div class="gallery__item">
                             <a class="lightbox" href="./images/tnmpics/5.jpg">
                                 <img src="./images/tnmpics/5.jpg" alt="Bridge">
                             </a>
                         </div> 
+                       
+                        <div class="gallery__item">
+                            <a class="lightbox" href="./images/tnmpics/7.jpg">
+                                <img src="./images/tnmpics/7.jpg" alt="Bridge">
+                            </a>
+                        </div>
+                        <div class="gallery__item">
+                            <a class="lightbox" href="./images/tnmpics/11.jpg">
+                                <img src="./images/tnmpics/11.jpg" alt="Bridge">
+                            </a>
+                        </div>
+                        <div class="gallery__item">
+                            <a class="lightbox" href="./images/tnmpics/8.jpg">
+                                <img src="./images/tnmpics/8.jpg" alt="Bridge">
+                            </a>
+                        </div>
+                        <div class="gallery__item">
+                            <a class="lightbox" href="./images/tnmpics/9.jpg">
+                                <img src="./images/tnmpics/9.jpg" alt="Bridge">
+                            </a>
+                        </div>   
                         <div class="gallery__item">
                             <a class="lightbox" href="./images/tnmpics/6.jpg">
                                 <img src="./images/tnmpics/6.jpg" alt="Bridge">
                             </a>
                         </div>
-            
+                        <div class="gallery__item">
+                            <a class="lightbox" href="./images/tnmpics/10.jpg">
+                                <img src="./images/tnmpics/10.jpg" alt="Bridge">
+                            </a>
+                        </div>
+                        <div class="gallery__item">
+                            <a class="lightbox" href="./images/tnmpics/11.jpg">
+                                <img src="./images/tnmpics/11.jpg" alt="Bridge">
+                            </a>
+                        </div>
+                        <div class="gallery__item">
+                            <a class="lightbox" href="./images/tnmpics/12.jpg">
+                                <img src="./images/tnmpics/12.jpg" alt="Bridge">
+                            </a>
+                        </div>
+                        <div class="gallery__item">
+                            <a class="lightbox" href="./images/tnmpics/4.jpg">
+                                <img src="./images/tnmpics/4.jpg" alt="Bridge">
+                            </a>
+                        </div> 
                     </div>
             
                 </div>
@@ -684,6 +850,7 @@
 
     <script src="jquery-3.1.0.min.js"></script>
     <script src="jquery.easing.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
     <script src="jquery.mousewheel.min.js"></script>
     <script src="viewScroller.js"></script>
     <script>
@@ -742,39 +909,74 @@
                 }
             });
 
-            $('.event-btn').on('click', function(){
+            $('.event-btn').on('click', function(event){
                 $.each($('.event-btn'), function(index, value){
                     $(value).removeClass('active');
                 })
                 $(this).toggleClass('active');
+                switch(event.target.classList[1]){
+                  case 'tech': console.log('tech');
+                                $('.techlist').css('display','block');
+                                $('.non-techlist').css('display','none');
+                                $('.cultlist').css('display','none');
+                                break;
+                  case 'non-tech': console.log('non-tech');
+                                $('.non-techlist').css('display','block');
+                                $('.cultlist').css('display','none');
+                                $('.techlist').css('display','none');
+                                break;
+                  case 'cult': console.log('cult');
+                                $('.cultlist').css('display','block');
+                                $('.non-techlist').css('display','none');
+                                $('.techlist').css('display','none');
+                                break;
+                }
                 $('.events-grid').css('display', 'grid');
             });
 
-            // Get the modal
-            var modal = document.getElementById('myModal');
+            // // Get the modal
+            // var modal = document.getElementById('myModal');
 
-            // Get the button that opens the modal
-            var btn = document.getElementById("myBtn");
+            // // Get the button that opens the modal
+            // var btn = document.getElementById("myBtn");
 
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
+            // // Get the <span> element that closes the modal
+            // var span = document.getElementsByClassName("close")[0];
 
-            // When the user clicks on the button, open the modal 
-            btn.onclick = function() {
-              modal.style.display = "block";
-            }
+            // // When the user clicks on the button, open the modal 
+            // btn.onclick = function() {
+            //   modal.style.display = "block";
+            // }
 
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-              modal.style.display = "none";
-            }
+            // // When the user clicks on <span> (x), close the modal
+            // span.onclick = function() {
+            //   modal.style.display = "none";
+            // }
 
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-              if (event.target == modal) {
-                modal.style.display = "none";
-              }
-            }
+            // // When the user clicks anywhere outside of the modal, close it
+            // window.onclick = function(event) {
+            //   if (event.target == modal) {
+            //     modal.style.display = "none";
+            //   }
+            // }
+
+            $('#accordion1').accordion({
+              collapsible: true,
+              active: false
+            });
+            $('#accordion2').accordion({
+              collapsible: true,
+              active: false
+            });
+            $('#accordion3').accordion({
+              collapsible: true,
+              active: false
+            });
+            // $( "#tabs" ).tabs({
+            //   classes: {
+            //     "ui-tabs": "highlight"
+            //   }
+            // });
 			
         });
     </script>

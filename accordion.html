@@ -1,0 +1,88 @@
+<html>
+	<head>
+	<link href="jquery-ui.css" rel="stylesheet" type="text/css">
+    <script src="jquery-ui.min.js"></script>
+    <script src="jquery-3.1.0.min.js"></script>
+    <title>Accordion</title>
+	</head>
+
+	<body>
+		 <div id="mainContent">
+        <h1>This is an According Example</h1>           
+	    </div>
+	    <!-- <div id="accordion">
+	        <h3><a href="#">Heading for first sentence</a></h3>
+	        <div>
+	        <p>This is the first sentence.</p>
+	        <div id="accordion2">
+		        <h3><a href="#">Heading for first sentence</a></h3>
+		        <div>
+		        <p>This is the first sentence.</p>
+		        </div>          
+		        <h3><a href="#">Heading for second sentence</a></h3>            
+		        <div>
+		        <p>This is the second sentence.</p>
+		        </div>
+		        <h3><a href="#">Heading for third sentence</a></h3>
+		        <div>
+		        <p>This is the third sentence.</p>
+		        </div>
+		    	</div>
+	        </div>          
+	        <h3><a href="#">Heading for second sentence</a></h3>            
+	        <div>
+	        <p>This is the second sentence.</p>
+	        </div>
+	        <h3><a href="#">Heading for third sentence</a></h3>
+	        <div>
+	        <p>This is the third sentence.</p>
+	        </div>
+	    </div> -->
+	    <div id="tabs">
+		  <ul>
+		    <li><a href="#fragment-1">One</a></li>
+		    <li><a href="#fragment-2">Two</a></li>
+		    <li><a href="#fragment-3">Three</a></li>
+		  </ul>
+		  <div id="fragment-1">
+		    <div id="accordion2">
+		        <h3><a href="#">Heading for first sentence</a></h3>
+		        <div>
+		        <p>This is the first sentence.</p>
+		        </div>          
+		        <h3><a href="#">Heading for second sentence</a></h3>            
+		        <div>
+		        <p>This is the second sentence.</p>
+		        </div>
+		        <h3><a href="#">Heading for third sentence</a></h3>
+		        <div>
+		        <p>This is the third sentence.</p>
+		        </div>
+		    </div>
+		  </div>
+		  <div id="fragment-2">
+		    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+		  </div>
+		  <div id="fragment-3">
+		    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+		  </div>
+		</div>
+	</body>
+	<script>
+		$(document).ready(function(){
+			$('#accordion').accordion({
+				collapsible: true,
+				active: false
+			});
+			$('#accordion2').accordion({
+				collapsible: true,
+				active: false
+			});
+			$( "#tabs" ).tabs({
+			  classes: {
+			    "ui-tabs": "highlight"
+			  }
+			});
+		})
+	</script>
+</html>
