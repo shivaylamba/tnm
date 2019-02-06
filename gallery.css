@@ -35,7 +35,7 @@ body {
     -webkit-animation:oscillate 10s infinite alternate; /* Safari and Chrome */
     -o-animation:oscillate 10s infinite alternate; /* Opera */
 }
-@media(max-width: 600px) {
+@media(max-width: 900px) {
     #stuff {
         display:none;
     }

@@ -6,7 +6,7 @@ body {
 *, *::before, *::after {
   box-sizing: border-box;
 }
-@media(max-width: 600px) {
+@media(max-width: 900px) {
     .honeycomb {
         display: flex;
         justify-content: space-evenly;
@@ -17,7 +17,7 @@ body {
         width:150px;
     }
 }
-@media(min-width: 600px) {
+@media(min-width: 901px) {
     .honeycomb {
       display: flex;
       flex-wrap: wrap;
