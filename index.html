@@ -29,6 +29,7 @@
     <link rel = "stylesheet" href="style.css">
     <link rel = "stylesheet" href="mario.css">
     
+    <link rel = "stylesheet" href="honeycomb.css">
 
     <link rel="stylesheet" type="text/css" href="style1.css">
     <link rel="stylesheet" type="text/css" href="style2.css">
@@ -140,7 +141,7 @@
                             
                              <h4 id = "tnm1" style="z-index: 10000;">presents.....</h4>
 
-                              <img src="images/12.png" style = "width:100%;max-width:500px; height:50%;position: relative;z-index: 999;display: block;margin: auto;"/>
+                              <img src="images/12.png" style = "width:100%;max-width:500px; height:65%;position: relative;z-index: 999;display: block;margin: auto;"/>
                              
                              <br> <br> 
 
@@ -322,7 +323,7 @@
  
                     <h2 class="abouthead" style="z-index: 110000;position:relative;margin:0;">About Us</h2>
                
-                    <span style="font-size: 1.6rem; z-index: 100000;position: relative; font-family:Arial, Helvetica, sans-serif; color: white" class = "text">Maharaja Agrasen Institute of Technology, Affiliated to Guru Gobind Singh Indraprastha University is a premier institute in the field of technology. The Institute is established by Maharaja Agrasen Technical Education Society promoted by groups of well known Industrialists, Businessmen, Professionals and Philanthropists with an aim to promote quality education in the field of Technology.<br>The knowledge, skill and acumen instilled in the students has been instrumenal in creating prospective leaders for tomorrow and making them stand above the hoi polloi.Techsurge & Mridang 2018 is a three days Techno-Cultural fest Which include Technical events under the banner of "Techsurge", Cultural events under the banner of "Mridang and various Non-Tech and Sports events."</span>
+                    <span style=" z-index: 100000;position: relative;font-family:Atari; color: white;" class = "text" id="viewdiv__span">Maharaja Agrasen Institute of Technology, Affiliated to Guru Gobind Singh Indraprastha University is a premier institute in the field of technology. The Institute is established by Maharaja Agrasen Technical Education Society promoted by groups of well known Industrialists, Businessmen, Professionals and Philanthropists with an aim to promote quality education in the field of Technology.<br>The knowledge, skill and acumen instilled in the students has been instrumenal in creating prospective leaders for tomorrow and making them stand above the hoi polloi.Techsurge & Mridang 2018 is a three days Techno-Cultural fest Which include Technical events under the banner of "Techsurge", Cultural events under the banner of "Mridang and various Non-Tech and Sports events."</span>
                     
                   
                     <script>
@@ -380,7 +381,7 @@
             <div>
   
                   <marquee behavior="alternate"style=" z-index: 220000;position: relative;" direction="left">
-                          <img src="./images/space.png"  style=" z-index: 220000;position: relative;  width : 120px; height : 80 px;"/>
+                          <img src="./images/space.png"  style=" z-index: 220000;position: relative;  width : 80px; height : 60 px;"/>
                         </marquee>
   
             </div>
@@ -637,6 +638,7 @@
                              <div class="col-sm-3">  
                                     <img src="images/sponsor/cp.jpeg"style="z-index: 100000;position: relative;" alt="Central Perk"/>
                                 </div>
+                                
                             </div>
                 
                 
@@ -657,14 +659,14 @@
             </div>  -->
 
 
-            <div class="container gallery-container" style = "background-color: #27cece;width: 100%;height:100%;position: relative;" >
+            <div class="container gallery-container" style = "background-image:url('./images/tnmpics/20.jpg');width: 100%;height:100%;position: relative;" >
                 <img src="./images/angrybirds/ab.png" alt="Bird" class="angrybird__img1">
                 <img src="./images/angrybirds/584c69426e7d5809d2fa6361.png" alt="Bird" class="angrybird__img2">
-             <!-- <h1 id = "ab_heading">Techsurge & Mridang</h1>  -->
             
-                <h2 id = "ab_heading" style="height:7%;">GALLERY</h2>
-                <!-- <img id  = "ab" src = "images/ab.png">  -->
-                <div class="tz-gallery" style = "background-color: #27cece;height:85%;">
+                <h2 id = "ab_heading" style="height:7%;color: white">GALLERY</h2>
+
+              
+                <!-- <div class="tz-gallery" style = "background-color: #27cece;height:85%;">
             
                     <div class="row" id ="gallery__row">
             
@@ -736,10 +738,86 @@
                             </a>
                         </div> 
                     </div>
-            
-                </div>
+             -->
+<!-- <div style="height: 100%;width:100%">
+             <ul class="containergallery" style="width: 100%; height : 100%">
+             <li class="item1"><a href="#0" title="01"><img src="./images/tnmpics/1.jpg" alt="01" height="100px"></a></li>
+             <li class="item1"><a href="#0" title="02"><img src="./images/tnmpics/1.jpg" alt="02"height="100px" ></a></li>
+             <li class="item1"><a href="#0" title="03"><img src="./images/tnmpics/2.jpg" alt="03"height="100px"></a></li>
+             <li class="item1"><a href="#0" title="04"><img src="./images/tnmpics/3.jpg" alt="04"height="100px"></a></li>
+             <li class="item1"><a href="#0" title="05"><img src="./images/tnmpics/4.jpg" height="100px"alt="05"></a></li>
+             <li class="item1"><a href="#0" title="06"><img src="./images/tnmpics/5.jpg" height="100px"alt="06"></a></li>
+             <li class="item1"><a href="#0" title="07"><img src="./images/tnmpics/6.jpg" height="100px"alt="07"></a></li>
+             <li class="item1"><a href="#0" title="08"><img src="./images/tnmpics/7.jpg"height="100px" alt="08"></a></li>
+             <li class="item1"><a href="#0" title="09"><img src="./images/tnmpics/8.jpg"height="100px" alt="09"></a></li>
+             
+         </ul>
+         
+         <script>
+         var list = document.querySelectorAll(".item a");
+         
+         for (var i = 0; i < list.length; i++) {
+             var url = list[i].children[0].getAttribute("src");
+           list[i].style.backgroundImage="url('" + url + "')";
+         }
+         
+         
+         
+         
+         </script>
+
+        
            
-            </div>
+</div>        -->
+
+
+
+
+
+<ul class="honeycomb" lang="es">
+    <li class="honeycomb-cell">
+      <img class="honeycomb-cell__image" src="./images/tnmpics/1.jpg">
+      
+    </li>
+    <li class="honeycomb-cell">
+      <img class="honeycomb-cell__image" src="./images/tnmpics/2.jpg">
+    </li>
+    <li class="honeycomb-cell">
+      <img class="honeycomb-cell__image" src="./images/tnmpics/3.jpg">
+    </li>
+    <li class="honeycomb-cell">
+      <img class="honeycomb-cell__image" src="./images/tnmpics/4.jpg">
+    </li>
+    <li class="honeycomb-cell">
+      <img class="honeycomb-cell__image" src="./images/tnmpics/5.jpg">
+    </li>
+    <li class="honeycomb-cell">
+      <img class="honeycomb-cell__image" src="./images/tnmpics/6.jpg">
+    </li>
+    <li class="honeycomb-cell">
+      <img class="honeycomb-cell__image" src="./images/tnmpics/7.jpg">
+    </li>
+    <li class="honeycomb-cell honeycomb__placeholder"></li>
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
              
             <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
             <script>
@@ -770,7 +848,7 @@
 
 
 
-
+ </div>
 
 
         </div>

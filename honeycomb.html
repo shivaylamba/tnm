@@ -1,0 +1,167 @@
+<!-- Photos: pexels.com -->
+<html>
+<head>
+    <style>IMG {
+        width: 100%;
+        display: block;
+    }
+    .item IMG {
+        visibility: hidden;
+    }
+    .container {
+        margin: 3rem auto;
+        padding: 1rem 0 2.4rem;
+    /* 	background-color: gold; */
+        text-align: center;
+    }
+    .container::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .item {
+        width: 10rem;
+        height: 10rem;
+        position: relative;
+        display: inline-block;
+        margin: 0.5rem;
+    }
+    .item::before { /* Goldenrod outline on the hexagon */
+        content: "";
+        position: absolute;
+        top: 0; bottom: 0; left: 0; right: 0;
+        background-color: goldenrod;
+        clip-path: polygon(50% 0, 93.3% 25%, 93.3% 75%, 50% 100%, 6.7% 75%, 6.7% 25%);
+        transform: scale(1.077);
+        transition: transform 0.3s;
+    }
+    .item:hover::before {
+        transform: scale(1.154);
+    }
+    .item A {
+        position: absolute;
+        top: 0; bottom: 0; left: 0; right: 0;
+    /* 	background-image: See JS. */
+        background-size: cover;
+        background-position: center;
+        clip-path: polygon(50% 0, 93.3% 25%, 93.3% 75%, 50% 100%, 6.7% 75%, 6.7% 25%);
+    }
+    
+    
+    @media (min-width: 17rem) {
+        .item {
+            display: block;
+            float: left;
+            margin: 0; /* reset */
+            margin-bottom: -1.4rem;	/* shifting up the items in the next row */
+        }
+    }
+    
+    @media (min-width: 17rem) and (max-width: 21.999rem) {
+        .container {
+            max-width: 15rem;
+        }
+        .item:nth-child(even) {
+            margin-left: 5rem;
+        }
+    }
+    
+    @media (min-width: 22rem) and (max-width: 31.999rem) {
+        .container {
+            max-width: 20rem;
+        }
+        .item:nth-child(3n+3) {
+            margin-left: 5rem
+        }
+    }
+    
+    @media (min-width: 32rem) and (max-width: 41.999rem) {
+        .container {
+            max-width: 30rem;
+        }
+        .item:nth-child(5n+4) {
+            margin-left: 5rem;
+        }
+    }
+    
+    @media (min-width: 42rem) and (max-width: 53.999rem) {
+        .container {
+            max-width: 40rem;
+        }
+        .item:nth-child(7n+5) {
+            margin-left: 5rem;
+        }
+    }
+    
+    @media (min-width: 54rem) {
+        .container {
+            max-width: 50rem;
+        }
+        .item:nth-child(9n+6) {
+            margin-left: 5rem;
+        }
+    }
+    /* IE resets - because of clip-path no support */
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        /* IE10+ CSS */
+        .container {
+            padding: 1.25rem 0;
+        }
+        .item {
+            display: inline-block;
+            float: none;
+            margin: .85rem !important;
+        }
+    }
+    @supports (-ms-ime-align: auto) {
+        /* IE Edge 12+ */
+        .container {
+            padding: 1.25rem 0;
+        }
+        .item {
+            display: inline-block;
+            float: none;
+            margin: .85rem !important;
+        }
+    }</style>
+</head>
+
+
+<body>
+
+
+<ul class="container">
+	<li class="item"><a href="https://res.cloudinary.com/rafiozoo/image/upload/v1519246811/misc/bees/bees-01.jpg" title="01"><img src="https://res.cloudinary.com/rafiozoo/image/upload/v1519246811/misc/bees/bees-01.jpg" alt="01"></a></li>
+	<li class="item"><a href="#0" title="02"><img src="./images/tnmpics/1.jpg" alt="02"></a></li>
+	<li class="item"><a href="#0" title="03"><img src="https://res.cloudinary.com/rafiozoo/image/upload/v1519246811/misc/bees/bees-03.jpg" alt="03"></a></li>
+	<li class="item"><a href="#0" title="04"><img src="https://res.cloudinary.com/rafiozoo/image/upload/v1519246811/misc/bees/bees-04.jpg" alt="04"></a></li>
+	<li class="item"><a href="#0" title="05"><img src="https://res.cloudinary.com/rafiozoo/image/upload/v1519246811/misc/bees/bees-05.jpg" alt="05"></a></li>
+	<li class="item"><a href="#0" title="06"><img src="https://res.cloudinary.com/rafiozoo/image/upload/v1519246811/misc/bees/bees-06.jpg" alt="06"></a></li>
+	<li class="item"><a href="#0" title="07"><img src="https://res.cloudinary.com/rafiozoo/image/upload/v1519246811/misc/bees/bees-07.jpg" alt="07"></a></li>
+	<li class="item"><a href="#0" title="08"><img src="https://res.cloudinary.com/rafiozoo/image/upload/v1519246811/misc/bees/bees-08.jpg" alt="08"></a></li>
+	<li class="item"><a href="#0" title="09"><img src="https://res.cloudinary.com/rafiozoo/image/upload/v1519246811/misc/bees/bees-09.jpg" alt="09"></a></li>
+	<li class="item"><a href="#0" title="10"><img src="https://res.cloudinary.com/rafiozoo/image/upload/v1519246811/misc/bees/bees-10.jpg" alt="10"></a></li>
+	<li class="item"><a href="#0" title="11"><img src="https://res.cloudinary.com/rafiozoo/image/upload/v1519246811/misc/bees/bees-11.jpg" alt="11"></a></li>
+	<li class="item"><a href="#0" title="12"><img src="https://res.cloudinary.com/rafiozoo/image/upload/v1519246811/misc/bees/bees-12.jpg" alt="12"></a></li>
+	<li class="item"><a href="#0" title="13"><img src="https://res.cloudinary.com/rafiozoo/image/upload/v1519246811/misc/bees/bees-13.jpg" alt="13"></a></li>
+	<li class="item"><a href="#0" title="14"><img src="https://res.cloudinary.com/rafiozoo/image/upload/v1519246811/misc/bees/bees-14.jpg" alt="14"></a></li>
+	
+</ul>
+
+<script>
+var list = document.querySelectorAll(".item a");
+
+for (var i = 0; i < list.length; i++) {
+	var url = list[i].children[0].getAttribute("src");
+  list[i].style.backgroundImage="url('" + url + "')";
+}
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

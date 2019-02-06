@@ -105,8 +105,8 @@
      justify-content: center;
    } */
    .pacman {
-     width: 100px;
-     height: 100px;
+     width: 6rem;
+     height: 6rem;
      position: absolute;
      /* top: 450px; */
      /* top: 75%; */
@@ -143,8 +143,8 @@
      animation: up 0.7s infinite;
    }
    .pacman .dots {
-     width: 16px;
-     height: 16px;
+     width: 1rem;
+     height: 1rem;
      background: white;
      position: absolute;
      border-radius: 8px;
@@ -162,9 +162,9 @@
    .ghost {
      z-index: 5;
      position: relative;
-     width: 76px;
-     height: 86px;
-     left: 70%;
+     width: 5rem;
+     height: 6rem;
+     left: 40%;
      top: 90%;
      margin-top: 400px;
      background: white;
@@ -242,8 +242,15 @@
      animation: eyes 0.7s infinite;
    }
    
-
-
+#viewdiv__span {
+  font-size: 2.5rem;
+  width:100%;
+}
+@media(max-width: 600px) {
+  #viewdiv__span {
+    font-size: 2rem;
+  }
+}
 
 
 #theme{
@@ -745,7 +752,13 @@ position: relative;
 
 
 
-
+@font-face {
+  font-family: "atari";
+  src: url("font/atari.ttf");
+  /* src: url("CustomFont.woff") format("woff"),
+  url("CustomFont.otf") format("opentype"),
+  url("CustomFont.svg#filename") format("svg"); */
+  }
 
 
 @font-face {
@@ -885,14 +898,14 @@ h1 span:nth-child(7){
   top:1%;
   left:1%;
   height:100px;
-  width:130px;
+  width:100px;
 }
 .angrybird__img2 {
   position: absolute;
   top:1%;
   right:1%;
   height:200px;
-  width:130px;
+  width:100px;
 }
 
 .abouthead{
