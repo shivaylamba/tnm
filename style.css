@@ -162,8 +162,8 @@
    .ghost {
      z-index: 5;
      position: relative;
-     width: 5rem;
-     height: 6rem;
+     width: 4rem;
+     height: 5rem;
      left: 40%;
      top: 90%;
      margin-top: 400px;
