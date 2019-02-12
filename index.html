@@ -110,8 +110,8 @@
         <span class="close">&times;</span>
         <p>Coming Soon!</p>
       </div>
-
     </div> -->
+    
     <div class="mainbag" style = "background-color: #000;">
         <div vs-anchor="view-1" class="mainview view1" style = "background-color: black">
         <img src = "images/11.gif" style = "width: 100%;height: 100%;z-index: 10;position: absolute; ">
@@ -173,7 +173,7 @@
                                       </div>
                                 <!--   <span id = "dates" style="z-index: 100000">14 - 16 March</span>   -->   
 
-                                      <div class="ghosts"style="z-index: 100000" >
+                                      <div class="ghosts"style="z-index: 100000; position: absolute; margin-right:-15px" >
                                         <div class="ghost">
                                           <div class="eyes">
                                             <span class="l-eye"></span>
@@ -403,148 +403,10 @@
             <div class="mario"></div>
             <div class="floor"></div>
             <div class="event-btns">
-                
-                <div class="event-btn tech">Technical</div>
-                <div class="event-btn non-tech">Non-Technical</div>
-                <div class="event-btn cult">Cultural</div>
+                <a href="./techlist.html" target="_blank" class="event-btn">Technical</a>
+                <a href="./non-techlist.html" target="_blank" class="event-btn">Non-Technical</a>
+                <a href="./culturallist.html" target="_blank" class="event-btn">Cultural</a>
             </div>
-           
-            <div class="list-container">
-
-
-
-                <div id="accordion1" class="techlist">
-  
-  
-  
-                <h3><a href="#">Technical Category A</a></h3>
-
-                <div>
-    
-                    <ul>
-                        <li>LanGaming</li>
-                        <li>CodeBlaze</li>
-                        <li>CodingJunction</li>
-                        <li>LineFollower</li>
-                        <li>InfinteLoop</li>
-                        <li>AquaBot</li>
-                      
-
-                      </ul>
-  
-                </div>          
-  
-                <h3><a href="#">Technical Category B</a></h3>            
-  
-                <div>
-  
-                    <ul>
-                        <li>HackMAIT</li>
-                        <li>Pin N Play</li>
-                        <li>RoboWars</li>
-                        <li>RoboRace</li>
-                        <li>RoboSoccer</li>
-                        <li>RoboMaze</li>
-                      
-
-                      </ul>
-  
-                </div>
-  
-                </div>
-  
-  
-  
-                <div id="accordion2" class="non-techlist">
-  
-                <h3><a href="#">Non Technical Category A</a></h3>
-  
-                <div>
-  
-                    <ul>
-                        <li>MTVcorner</li>
-                        <li>VigyaFun</li>
-                        <li>SpoofMafia</li>
-                        <li>FifaMockttransfer</li>
-                        <li>CricketFantasyLeague</li>
-                        <li>BetheSherlock</li>
-                      
-
-                      </ul>
-                </div>          
-  
-                <h3><a href="#">Non Technical Category B</a></h3>            
-  
-                <div>
-                    <li>RangBarse</li>
-                    <li>PhotoBooth</li>
-                    <li>Scavenger Hunt</li>
-                    <li>SaReGaMa</li>
-                    <li>AdOReel</li>
-                
-                    
-  
-                </div>
-  
-               
-                </div>
-  
-                <div id="accordion3" class="cultlist">
-  
-                <h3><a href="#">Cultural Category A</a></h3>
-  
-                <div>
-  
-                    <ul>
-                        <li>Footloose</li>
-                        <li>HauteCouture</li>
-                        <li>Armageddon</li>
-                        <li>MAITgotTalent</li>
-                        <li>Impulse</li>
-                        <li>DekhTamashaDekh</li>
-                        <li>Footloose</li>
-                        <li>Panache</li>
-
-                      </ul>
-  
-                </div>          
-
-                <h3><a href="#">Cultural Category B</a></h3>            
-  
-                <div>
-  
-                    <ul>
-                        <li>Individual Obstaclerace</li>
-                        <li>wall climbing</li>
-                        <li>dramebaaz</li>
-                        <li>keep calm and rap on</li>
-                        <li>Rangmanch</li>
-                        <li>Turn the Bass Line up</li>
-
-                      </ul>
-  
-                </div>
-  
-                <h3><a href="#">Sports</a></h3>
-  
-                <div>
-  
-                    <ul>
-                        <li>Cricket</li>
-                        <li>Football</li>
-                        <li>Volleyball</li>
-                        <li>Basketball</li>
-                        <li>Badminton</li>
-                        <li>Tugofwar</li>
-                        <li>Dodgeball</li>
-                    
-
-                      </ul>
-  
-                </div>
-  
-            </div>
-        </div>
       </div>
        <!--  -->
        
@@ -880,7 +742,7 @@
 <div class="column">
 <i class="fas fa-phone"></i>
 <h3><strong>PHONE</strong></h3>
-<p>+91-11-65647742</p>
+<p>91-8448186942</p>
 </div>
 <div class="column">
 <i class="fas fa-envelope"></i>
@@ -987,30 +849,30 @@
                 }
             });
 
-            $('.event-btn').on('click', function(event){
-                $.each($('.event-btn'), function(index, value){
-                    $(value).removeClass('active');
-                })
-                $(this).toggleClass('active');
-                switch(event.target.classList[1]){
-                  case 'tech': console.log('tech');
-                                $('.techlist').css('display','block');
-                                $('.non-techlist').css('display','none');
-                                $('.cultlist').css('display','none');
-                                break;
-                  case 'non-tech': console.log('non-tech');
-                                $('.non-techlist').css('display','block');
-                                $('.cultlist').css('display','none');
-                                $('.techlist').css('display','none');
-                                break;
-                  case 'cult': console.log('cult');
-                                $('.cultlist').css('display','block');
-                                $('.non-techlist').css('display','none');
-                                $('.techlist').css('display','none');
-                                break;
-                }
-                $('.events-grid').css('display', 'grid');
-            });
+            // $('.event-btn').on('click', function(event){
+            //     $.each($('.event-btn'), function(index, value){
+            //         $(value).removeClass('active');
+            //     })
+            //     $(this).toggleClass('active');
+            //     switch(event.target.classList[1]){
+            //       case 'tech': console.log('tech');
+            //                     $('.techlist').css('display','block');
+            //                     $('.non-techlist').css('display','none');
+            //                     $('.cultlist').css('display','none');
+            //                     break;
+            //       case 'non-tech': console.log('non-tech');
+            //                     $('.non-techlist').css('display','block');
+            //                     $('.cultlist').css('display','none');
+            //                     $('.techlist').css('display','none');
+            //                     break;
+            //       case 'cult': console.log('cult');
+            //                     $('.cultlist').css('display','block');
+            //                     $('.non-techlist').css('display','none');
+            //                     $('.techlist').css('display','none');
+            //                     break;
+            //     }
+            //     $('.events-grid').css('display', 'grid');
+            // });
 
             // // Get the modal
             // var modal = document.getElementById('myModal');
@@ -1038,18 +900,18 @@
             //   }
             // }
 
-            $('#accordion1').accordion({
-              collapsible: true,
-              active: false
-            });
-            $('#accordion2').accordion({
-              collapsible: true,
-              active: false
-            });
-            $('#accordion3').accordion({
-              collapsible: true,
-              active: false
-            });
+            // $('#accordion1').accordion({
+            //   collapsible: true,
+            //   active: false
+            // });
+            // $('#accordion2').accordion({
+            //   collapsible: true,
+            //   active: false
+            // });
+            // $('#accordion3').accordion({
+            //   collapsible: true,
+            //   active: false
+            // });
             // $( "#tabs" ).tabs({
             //   classes: {
             //     "ui-tabs": "highlight"

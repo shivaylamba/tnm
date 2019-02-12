@@ -74,7 +74,10 @@ src: url(font/HeadlinerNo45.ttf);
 .bg-text h3{
   font-family: "";
   font-size: 1.2em;
+  text-align: center;
   }
 .bg-text p{
   font-size: 0.9em;
+  text-align: center;
+  }
 }

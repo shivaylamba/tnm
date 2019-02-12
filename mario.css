@@ -97,14 +97,29 @@
 }
 
 .event-btn {
+  color: black;
   padding: 3%;
   margin: 5%;
-  color: white;
+  background-color: white;
   border-radius: 15px;
   text-align: center;
   cursor: pointer;
-  background : url('./images/shivamtopper.png');
-  background-size: contain;
+  text-decoration: none;
+}
+
+.event-btn:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.event-btn:active{
+  color:black;
+  text-decoration: none;
+}
+
+.event-btn:visited{
+  color: black;
+  text-decoration: none;
 }
 
 .active {
@@ -182,9 +197,7 @@
 }
 
 .list-container{
-
   padding: 0 25%;
-
 }
 
 
